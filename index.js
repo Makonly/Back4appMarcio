@@ -19,7 +19,7 @@ const renderizaLista = (lista, tarefas) => {
     buttonDelete.onclick = () => deleteTask(tarefa.objectId);
     const buttonUpdate = document.createElement("input");
     buttonUpdate.type= "checkbox";
-    buttonUpdate.checked = tarefa.done
+    buttonUpdate.checked = tarefa.done;
     buttonUpdate.innerHTML = "DONE";
     buttonUpdate.onclick = () => updateTask(tarefa);
     const listItem = document.createElement("li");
